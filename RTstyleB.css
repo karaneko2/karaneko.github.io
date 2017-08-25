@@ -112,7 +112,11 @@ html,body {
 	font-size: 16px;
 }
 
-.name{
+.tours > p{
+	
+}
+
+.name, .tours >.name, .tours > p, .row> .jumbotron>.row>p, .row>p{
 	font-family: 'Roboto Condensed, sans-serif';
 	font-size: 20px;
 	text-align: center; 
@@ -158,4 +162,19 @@ html,body {
 
 .panel p {
 	font-family: 'Roboto Condensed';
+}
+
+.container > .AboutUs{
+	border-right: 1px solid #e3e3e3;
+	font-family: 'Roboto Condensed, sans-serif';
+	font-size: 16px;
+}
+
+.Advantages{
+	font-family: 'Roboto Condensed, sans-serif';
+	font-size: 16px;
+}
+
+.Advantages > ul{
+	list-style-type: none;
 }
