@@ -54,7 +54,6 @@ html,body {
 
 .socialIcons .fa{
 	font-size: 32px;
-	padding-top: 10px;
 }
 
 /*---------------телефоны, язык-----------------*/
@@ -65,7 +64,7 @@ html,body {
 .phone{
 	font-family: 'Roboto Condensed', sanf-serif;
 	text-align: right;
-	display: block;
+	display: inline;
 }
 
 .phone > ul{
@@ -75,6 +74,8 @@ html,body {
 .phone > ul > li{
 	font-family: 'Roboto Condensed, sans-serif';
 	font-size: 18px;
+	display: inline;
+	margin-right: 60px;
 }
 
 .headContacts > phone > ul > li  span{
@@ -88,6 +89,9 @@ html,body {
 	color: rgb(13,92,145);
 	/*padding-top: 10px;*/
 	text-align: right;
+}
+.lang > a> img {
+	vertical-align: sub;
 }
 
 /*---------Navigation--------------*/
@@ -233,4 +237,9 @@ html,body {
 	font-family: 'Roboto Condensed, sans-serif';
 	font-size: 12px;
 	text-align: center;
+}
+
+.logo-small {
+      color: #f4511e;
+      font-size: 50px;
 }
