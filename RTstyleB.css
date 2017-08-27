@@ -78,6 +78,10 @@ html,body {
 	margin-right: 60px;
 }
 
+.phone> ul> li:last-child{
+	margin-right: 0;
+}
+
 .headContacts > phone > ul > li  span{
 	font-family: 'Roboto Condensed, sans-serif';
 	font-size: 18px;
