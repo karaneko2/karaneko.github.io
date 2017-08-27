@@ -64,7 +64,7 @@ html,body {
 .phone{
 	font-family: 'Roboto Condensed', sanf-serif;
 	text-align: right;
-	display: inline;
+	display: inline-block;
 }
 
 .phone > ul{
