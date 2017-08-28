@@ -137,6 +137,7 @@ html,body {
 
 .carousel-inner img {
   height: auto;
+  max-height: 422px;
   width: 100%;
 }
 /*	
