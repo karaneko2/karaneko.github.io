@@ -344,12 +344,22 @@ html,body {
 	margin-right: 15px;
 	float: left;
 	/*line-height: 34px;*/
-	line-height: 20px;
+	/*---line-height: 20px;---*/
 }
 .topbar > .navbarwrap .phoneblock>ul>li>span{
 	font-family: 'Work Sans',sans-serif; 
 	color: #333; 
 	font-size: 12px; 
+}
+.langsel>a{
+	display:flex;
+    align-items: center;
+}
+.langsel>a>img{
+	border: 1px;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
 }
 /*------///newHeader--------------------*/
 /*------carousel fonts------------------*/
