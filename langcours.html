@@ -71,9 +71,9 @@
             text-transform: uppercase;
             margin-left: 15px;
         }
-        .nav > li:first-child{
+        /*.nav > li:first-child{
             margin-left: 0;
-        }
+        }*/
         .nav > li > a{
             color: #fff;
         }
@@ -133,6 +133,20 @@
             font-size: small;
         }
         /*--footer*/
+        /*-----media-------*/
+        @media only screen and (max-width : 550px) {  
+            .nav li {  
+                display: block;  
+                width: 100%; 
+                justify-content:space-between;
+            }  
+        }  
+        @media only screen and (min-width : 1220px) {  
+            .nav > li:first-child {
+                margin-left: 0;
+            }
+        }
+        /*-----/media-----*/
     </style>
 </head>
 

@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Round Travel Отдых, туры, визы, билеты</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -71,9 +71,9 @@
             text-transform: uppercase;
             margin-left: 15px;
         }
-        .nav > li:first-child{
+        /*.nav > li:first-child{
             margin-left: 0;
-        }
+        }*/
         .nav > li > a{
             color: #fff;
         }
@@ -132,6 +132,20 @@
             font-size: small;
         }
         /*--footer*/
+        /*-----media-------*/
+        @media only screen and (max-width : 550px) {  
+            .nav li {  
+                display: block;  
+                width: 100%; 
+                justify-content:space-between;
+            }  
+        }  
+        @media only screen and (min-width : 1220px) {  
+            .nav > li:first-child {
+                margin-left: 0;
+            }
+        }
+        /*-----/media-----*/
     </style>
 </head>
 
