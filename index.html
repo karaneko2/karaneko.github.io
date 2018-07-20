@@ -5,7 +5,7 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="B-verify" content="b2a9b2fee95c37e46f46a32c0692bafd6818052c" />	
+    <meta name="B-verify" content="b2a9b2fee95c37e46f46a32c0692bafd6818052c" /> 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Round Travel Отдых, туры, визы, билеты</title>
     <!-- Font Awesome -->
@@ -99,6 +99,21 @@
         h3{
             text-align: center;
         }
+        /*contacts*/
+        .contacts{
+            margin-left: -15px;
+            margin-right: -15px;
+            border-radius: 0;
+            height: 250px;
+        }
+        .phones{
+            padding-left: 0;
+        }
+        .phones li{
+            list-style: none;
+            padding-left: 0;
+        }
+        /*--contacts*/
         /*footer*/
         footer{
             padding-top: 1.4rem;
@@ -167,18 +182,24 @@
 <body>
 
 	<div class="container-fluid bg">
+        <div class="row" style="background-color: white; color: darkblue; margin-top: -52px; height: 50px; padding-top: 10px; position: fixed">
+                <div class="col-md-2 ml-auto mr-auto">
+                    <img class="card-img-top" src="img/logo.png" width="100%">
+                </div>
+                <div class="col-md-9"></div>
+                <div class="col-md-1" style="padding-top: 5px; "><a href="#" style="color: darkblue;">Войти</a></div>
+        </div>
         <div class="container-fluid maincontent">
             <!--navigation menu-->
             <div class="row bg-rose">
                 <div class="container-fluid header">
                     <div class="nav justify-content-center navbar navigation" >
                         <ul class="nav navbar">
-                            <li><a href="#">Подбор тура</a></li>
-                            <li><a href="autortours.html">Авторские туры</a></li>
-                            <li><a href="langcours.html">Языковые курсы</a></li>
-                            <li><a href="workandtravel.html">Work and Travel</a></li>
-                            <li><a href="education.html">Образование за рубежом</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="#tours">Подбор тура</a></li>
+                            <li><a href="autortours.html">Авиаперелеты</a></li>
+                            <li><a href="langcours.html">Отели</a></li>
+                            <li><a href="#aboutcompany">О нас</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
                         </ul>	
                     </div>	
                 </div>
@@ -186,27 +207,27 @@
             <!--/navigation menu-->
             <!--plugin-tours search-->
             <div class="container-fluid plugin-maincontent">
-                <div class="row">
+                <div id="tours" class="row">
                     <script type="text/javascript" src="//ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script> <script type="text/javascript">sletat.createModule5('Search', { city : 1274, files : ["//ui.sletat.ru/module-5.0/theme/pinky_girly_dec2015.min.css"], usePricePerson : true, useJumpTo : true, agencyContact1 : { logo : "https://karaneko.github.io/img/logo.png" }, enabledCurrencies : ["RUB", "EUR", "USD"], useCard : false, resultsType : "page" });</script> <span class="sletat-copyright">Идет загрузка модуля <a href="http://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
                 </div>
             </div>
             <!--/plugin-tours search-->
-	    <!--plugin-hotels search-->
-	    <ins class="bookingaff" data-aid="1565238" data-target_aid="1565238" data-prod="dfl2" data-width="100%" data-height="auto" data-lang="browser-language" data-df_num_properties="5">
-    <!-- Anything inside will go away once widget is loaded. -->
-    <a href="//www.booking.com?aid=1565238">Booking.com</a>
-</ins>
-<script type="text/javascript">
-    (function(d, sc, u) {
-      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = u + '?v=' + (+new Date());
-      p.parentNode.insertBefore(s,p);
-      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-</script>	
-	    <!--/plugin-hotels search-->
-	    <!--new hotel search-->
+            <!--plugin-hotels search-->
+            <ins class="bookingaff" data-aid="1565238" data-target_aid="1565238" data-prod="dfl2" data-width="100%" data-height="auto" data-lang="browser-language" data-df_num_properties="5">
+                <!-- Anything inside will go away once widget is loaded. -->
+                <a href="//www.booking.com?aid=1565238">Booking.com</a>
+            </ins>
+            <script type="text/javascript">
+                (function(d, sc, u) {
+                  var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+                  s.type = 'text/javascript';
+                  s.async = true;
+                  s.src = u + '?v=' + (+new Date());
+                  p.parentNode.insertBefore(s,p);
+                  })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+            </script>
+            <!--/plugin-hotels search-->
+            <!--new hotel search-->
             <ins class="bookingaff" data-aid="1565265" data-target_aid="1565265" data-prod="nsb" data-width="100%" data-height="auto">
                 <!-- Anything inside will go away once widget is loaded. -->
                 <a href="//www.booking.com?aid=1565265">Booking.com</a>
@@ -219,7 +240,8 @@
                   s.src = u + '?v=' + (+new Date());
                   p.parentNode.insertBefore(s,p);
                   })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-            </script>	
+            </script>
+            <!--/new hotel search-->
             <!--feedback-->
             <div class="jumbotron text-center">
                 <div class="col-md-8 ml-auto mr-auto">
@@ -318,6 +340,31 @@
             </div>
             <hr>
             <!--/TourOperators-->
+            <!--contacts-->
+            <section id="contacts" class="jumbotron contacts">
+                <div class="container-fluid">
+                    <h3 class="text-center">Контакты</h3>
+                    <div class="row" style="margin-top: 40px">
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <h5>Адрес</h5>
+                            <p>г. Уфа ул. Карла Маркса 15/2</p>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <h5>Телефон</h5>
+                            <ul class="phones">
+                                <li>+79871449906 Альбина</li>
+                                <li>+791734470753 Ляйсан</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <h5>Email</h5>
+                            <p><a href="mailto:ufa@workandtravel.org" target="_blank">ufa@workandtravel.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/contacts-->
+            <hr>
             <!--footer-->
             <footer class="footer footer-white footer-big">
                 <div class="container">
@@ -338,7 +385,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contacts.html">
+                                        <a href="#contacts">
                                             Контакты
                                         </a>
                                     </li>
@@ -348,13 +395,13 @@
                                 <h5>Туры</h5>
                                 <ul class="links-vertical">
                                     <li>
-                                        <a href="#">
+                                        <a href="#tours">
                                             Подбор тура
                                         </a>
                                     </li>
                                     <li>
                                         <a href="autortours.html">
-                                            Авторские туры
+                                            
                                         </a>
                                     </li>
                                 </ul>
