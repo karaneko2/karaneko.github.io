@@ -41,6 +41,9 @@
         a{
             text-decoration: none;
         }
+        .fa{
+            font-size: 1.3rem;
+        }
         .jumbotron{
             background-color: inherit;
         }
@@ -172,13 +175,13 @@
             <div class="container-fluid nav-menu">
                     <ul class="nav justify-content-end">
                           <li class="nav-item">
-                            <a class="nav-link" href="#advantages">О компании</a>
+<!--                            <a class="nav-link" href="#advantages">О компании</a>-->
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Контакты</a>
+<!--                            <a class="nav-link" href="#contacts">Контакты</a>-->
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="test_bigpl.html" target="_blank" title="">Проверить</a>
+                            <a class="nav-link" href="https://vk.com/round.travel" target="_blank" title="ВКонтакте"><i class="fa fa-vk"></i></a>
                           </li>
                     </ul>
             </div>
@@ -194,45 +197,30 @@
                 <h2>Твой мир без границ!</h2>
                 <h3 style="padding-top: 40px;"><strong>Цены ниже предлагаемых туроператорами</strong></h3>
             </div>
-            <!--new plugin sletat' 4.0-->
-            <div class="container" style="padding-top: 40px;">
-                <div class="col-md-10 ml-auto mr-auto">
-                    <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
-                    <script type="text/javascript">sletat.FrameSearch.$create({
-                      city                 : 1274,
-                      radius               : 0,
-                      theme                : "azure-dark",
-                      formType             : "horizontal",
-                      useJumpTo            : true,
-                      jumpToTarget         : "blank",
-                      jumpToAddress        : "https://karaneko.github.io/index_big4_0.html",
-                      useSinglePage        : true,
-                      resultFullCountRows  : 15,
-                      resultShortCountRows : 10,
-                      resultGroupCountRows : 20,
-                      enabledCurrencies    : ["RUB", "EUR", "USD"],
-                      agencyContact1       : {
-                        header             : "Контакты",
-                        phone              : "+7(912)3456789",
-                        email              : "ourf@mail.ru",
-                        content            : "Приветствуем Вас!"
+            <!--new plugin sletat' 5.0-->
+            <div class="container text-center" style="padding-top: 35px;">
+<!--                <div class="col-md-10 ml-auto mr-auto">-->
+                    <script type="text/javascript" src="https://ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script>
+                    <script type="text/javascript">sletat.createModule5('Search', {
+                      city              : 1274,
+                      files             : ["https://ui.sletat.ru/module-5.0/theme/sea.min.css"],
+                      usePricePerson    : true,
+                      agencyContact1    : {
+                        header          : "Наши контакты",
+                        phone           : "+7(900)1234567",
+                        email           : "email@mail.ru",
+                        content         : "Приветствуем вас!"
                       },
-                      agencyContact2       : {
-                        header             : "Наши контакты",
-                        phone              : "+7(912)3456789",
-                        email              : "ourf@mail.ru",
-                        content            : "Рады приветствовать Вас!"
-                      },
-                      useCard              : true,
-                      useFakeDiscount      : true,
-                      fakeDiscount         : 0.02,
-                      useShortLink         : 1,
-                      resultsType          : "popup"
+                      enabledCurrencies : ["RUB", "EUR", "USD"],
+                      buyingType        : "card",
+                      useCard           : true,
+                      useFakeDiscount   : true,
+                      fakeDiscount      : 0.02
                     });</script>
                     <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
-                </div>
+<!--                </div>-->
             </div>
-            <!--/new plugin sletat' 4.0-->    
+            <!--/new plugin sletat' 5.0-->    
             <!--plugin-tours search-->
             <!--<div align="center" class="container plugin" style="padding-top: 40px">
                 <div class="col-md-10 ml-auto mr-auto">
@@ -247,7 +235,7 @@
                 </div>
             </div>-->
             <!--plugin-vertical-->
-            <div class="container plugin-vertical">
+            <!--<div class="container plugin-vertical">
                 <div class="col-md-10 ml-auto mr-auto">
                     <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
                     <script type="text/javascript">sletat.FrameSearch.$create({
@@ -259,7 +247,7 @@
                     });</script>
                     <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
                 </div>
-            </div>
+            </div>-->
             <!--/plugin-vertical-->
             <!--plugin-vertical-Results-->
             <!--/plugin-vertical-Results-->
@@ -268,7 +256,7 @@
     <div id="advantages" class="container-fluid">
         <!--advantages-->
             <div class="container-fluid text-center advantages">
-                <h3>Наши преимущества</h3>
+                <div class="col-md-8 mr-auto ml-auto" style="margin-top: 30px; margin-bottom: 30px;"><h3>Вам понравится сотрудничать с нами, потому что нам важно, чтобы Вы чувствовали нашу поддержку</h3></div>
                 <br>
                 <div class="row">
                     <div class="col-sm-4">
@@ -292,7 +280,7 @@
                     <div class="col-sm-4">
                         <span class="glyphicon glyphicon-piggy-bank logo-small"></span>
                         <h4>ЭКОНОМИЯ</h4>
-                        <p>У нас действует система лояльности и система скидок</p>
+                        <p>Предлагаем цены ниже, чем туроператоры</p>
                     </div>
                     <div class="col-sm-4">
                         <span class="glyphicon glyphicon-certificate logo-small"></span>
@@ -323,7 +311,7 @@
 
                     <!-- Image -->
 <!--                    <div class="container text-center" style="height: 460px; background-image: url(img/sea-418742_1280.jpg); background-repeat: no-repeat; background-size: cover;">-->
-                      <img src="diif_pict/team-3373638_1280.jpg" alt="..." class="img-fluid">
+                      <img src="img/team-3373638_1280.jpg" alt="..." class="img-fluid">
                       <div class="col-md-8 ml-auto mr-auto">
 <!--                            <h3 style="padding-top: 100px; color: #fff">Выберите лучший отдых самостоятельно или напишите нам! Мы рады помочь и ответить на все вопросы!</h3>-->
                       </div>
@@ -350,7 +338,7 @@
                           <p class="text-muted text-center">
                             Мы - команда энтузиастов, готовая зарядить Вас радостью путешествий. 
                                 В нашем клубе путешественников Вы найдете отдых на любой вкус, начиная от пакетных туров от лучших туроператоров и до самых сумасшедших индивидуальных.
-                                Наша цель - сделать каждого из вас счастливым и зарядить жизненной энергией на годы вперед!!!
+                                Наша цель - сделать каждого из вас счастливым и зарядить жизненной энергией на годы вперед
                           </p>
 
                           <!-- Button -->
@@ -375,13 +363,13 @@
                     <h3>О нас</h3>
                     <p>Мы - команда энтузиастов, готовая зарядить Вас радостью путешествий. 
                         В нашем клубе путешественников Вы найдете отдых на любой вкус, начиная от пакетных туров от лучших туроператоров и до самых сумасшедших индивидуальных.
-                        Наша цель - сделать каждого из вас счастливым и зарядить жизненной энергией на годы вперед!!!
+                        Наша цель - сделать каждого из вас счастливым и зарядить жизненной энергией на годы вперед
                     </p>
                 </div>
             </div>-->
             <!--/about company-->
             <!--contacts-->
-            <section id="contacts" class="jumbotron contacts" style="background-image: url(diif_pict/postage-stamp-1479775_1280.png); height: auto; background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <section id="contacts" class="jumbotron contacts" style="background-image: url(img/postage-stamp-1479775_1280.png); height: auto; background-repeat: no-repeat; background-position: center; background-size: cover;">
                 <div class="container-fluid">
                     <h3 class="contacts-head">Контакты</h3>
                     <div class="row">
@@ -404,22 +392,7 @@
                 </div>
             </section>
             <!--/contacts-->
-            <!--feedback-->
-            <div class="jumbotron text-center" style="background-color: #f8f9fa; margin-left: -15px; margin-right: -15px;">
-                <div class="col-md-5 ml-auto mr-auto">
-                    <h3 class="name">Новости и предложения</h3> 
-                    <p>Подписывайтесь на наши новости и интересные предложения</p> 
-                    <form class="form-inline text-center" id="feedbackForm">
-                        <div class="input-group">
-                          <input type="email" class="form-control" id="email" size="50" placeholder="Email Address" required>
-                          <div class="input-group-btn">
-                            <button type="submit" id="formSubmit" class="btn btn-danger">Подписаться</button>
-                          </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--/feedback-->
+        
             <!--TourOperators-->
             <div class="container-fluid text-center">
                 <h3>Туроператоры</h3>
@@ -447,8 +420,23 @@
                     </li>
                 </ul>
             </div>
-            <hr>
             <!--/TourOperators-->
+            <!--feedback-->
+            <div class="jumbotron text-center" style="background-color: #f8f9fa; margin-left: -15px; margin-right: -15px;">
+                <div class="col-md-5 ml-auto mr-auto">
+                    <h3 class="name">Новости и предложения</h3> 
+                    <p>Подписывайтесь на наши новости и интересные предложения</p> 
+                    <form class="form-inline text-center" id="feedbackForm">
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="email" size="50" placeholder="Email Address" required>
+                          <div class="input-group-btn">
+                            <button type="submit" id="formSubmit" class="btn btn-danger">Подписаться</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--/feedback-->
     </div>
 <!--    <div class="container text-center">Не нашли подходящего варианта? Посмотрите билеты, отели и  страховки у наших партнеров!</div>-->
     <div class="container-fluid text-center" >
@@ -567,12 +555,12 @@
                                 <ul class="links-vertical">
                                     <li>
                                         <a href="#">
-                                            Договор
+                                           Как оплатить 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            Как оплатить
+                                            Оставить заявку на индивидуальный тур
                                         </a>
                                     </li>
                                 </ul>
